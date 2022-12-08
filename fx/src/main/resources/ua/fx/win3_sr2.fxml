@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ua.fx.controller.ThirdStepController"
+            maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fxbackground-color: #EE82EE;"
+            fx:id="scenePane"
+>
+
+    <AnchorPane layoutX="21.0" layoutY="15.0" prefHeight="46.0"
+                prefWidth="405.0" style="-fx-background-color: #EE82EE;">
+        <Label layoutX="76.0" layoutY="8.0" text="Крок 2/3"
+               textAlignment="CENTER">
+            <font>
+                <Font name="Mukta Malar Bold" size="24.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <AnchorPane layoutX="20.0" layoutY="85.0" prefHeight="273.0"
+                prefWidth="558.0" style="-fx-background-color: #EE82EE;">
+        <Label layoutX="64.0" layoutY="15.0" prefHeight="49.0"
+               prefWidth="450.0" text="Оберіть мови програмування, які Ви вивчали">
+            <font>
+                <Font name="Mukta Malar Bold" size="21.0"/>
+            </font>
+        </Label>
+        <Button fx:id="exitButton" layoutX="77.0" layoutY="165.0" onAction="#exitAction"
+                mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fxbackground-color: #EE82EE;"
+                text="Вихід"/>
+        <Button fx:id="nextButton" layoutX="347.0" layoutY="165.0"
+                mnemonicParsing="false" onAction="#nextAction" prefHeight="26.0"
+                prefWidth="82.0" style="-fx-background-color: #FFFAFA;" text="Далі->"/>
+        <CheckBox layoutX="64.0" layoutY="79.0" mnemonicParsing="false"
+                  text="C++"/>
+        <CheckBox layoutX="64.0" layoutY="111.0" mnemonicParsing="false"
+                  text="C#"/>
+        <CheckBox layoutX="178.0" layoutY="79.0" mnemonicParsing="false"
+                  text="Java"/>
+        <CheckBox layoutX="178.0" layoutY="111.0" mnemonicParsing="false"
+                  text="Python"/>
+        <CheckBox layoutX="298.0" layoutY="79.0" mnemonicParsing="false"
+                  text="Pascal"/>
+        <CheckBox layoutX="298.0" layoutY="111.0" mnemonicParsing="false"
+                  text="Go"/>
+        <CheckBox layoutX="410.0" layoutY="79.0" mnemonicParsing="false"
+                  text="JavaScript"/>
+        <CheckBox layoutX="410.0" layoutY="111.0" mnemonicParsing="false"
+                  text="Fortran"/>
+    </AnchorPane>
+
+</AnchorPane>

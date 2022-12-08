@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ua.fx.controller.AboutMeController"
+            fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: #FFFAFA;">
+
+    <AnchorPane layoutX="21.0" layoutY="15.0" prefHeight="46.0"
+                prefWidth="405.0" style="-fx-background-color: #EE82EE;">
+        <Label layoutX="66.0" layoutY="4.0" text="Інформація про
+розробника" textAlignment="CENTER">
+            <font>
+                <Font name="Mukta Malar Bold" size="24.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <AnchorPane layoutX="20.0" layoutY="85.0" prefHeight="273.0"
+                prefWidth="558.0" style="-fx-background-color: #EE82EE;">
+        <Label layoutX="53.0" layoutY="42.0" text="ПІБ : Кодовбецька Вікторія Ігорівна"/>
+        <Label layoutX="51.0" layoutY="102.0" text=" Дата здачі роботи:"/>
+        <Label layoutX="55.0" layoutY="131.0" text="Оцінка:"/>
+        <ImageView fitHeight="208.0" fitWidth="215.0" layoutX="336.0"
+                   layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@photo.jpg"/>
+        </ImageView>
+        <ComboBox fx:id="groupCombox" layoutX="165.0" layoutY="66.0"
+                  prefHeight="26.0" prefWidth="117.0" promptText="-"/>
+        <Label layoutX="53.0" layoutY="71.0" prefHeight="17.0"
+               prefWidth="100.0" text="Група:"/>
+        <TextField layoutX="165.0" layoutY="97.0" prefHeight="26.0"
+                   prefWidth="117.0"/>
+        <ComboBox fx:id="markCombox" layoutX="165.0" layoutY="126.0"
+                  prefHeight="26.0" prefWidth="117.0" promptText="-"/>
+    </AnchorPane>
+    <Button fx:id="exitButton" layoutX="468.0" layoutY="25.0"
+            mnemonicParsing="false" onAction="#exitAction" prefHeight="26.0"
+            prefWidth="82.0" style="-fx-background-color: #00FA9A;" text="Вихід"/>
+</AnchorPane>

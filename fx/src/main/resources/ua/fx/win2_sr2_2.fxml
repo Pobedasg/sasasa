@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="scenePane"
+        xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ua.fx.controller.SecondStepController"
+            maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fxbackground-color: #EE82EE;">
+
+    <AnchorPane layoutX="21.0" layoutY="15.0" prefHeight="46.0"
+                prefWidth="405.0" style="-fx-background-color: #EE82EE;">
+        <Label layoutX="76.0" layoutY="8.0" text="Крок 1/3"
+               textAlignment="CENTER">
+            <font>
+                <Font name="Mukta Malar Bold" size="24.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <AnchorPane layoutX="20.0" layoutY="85.0" prefHeight="273.0"
+                prefWidth="558.0" style="-fx-background-color: #EE82EE;">
+        <Label layoutX="34.0" layoutY="47.0" prefHeight="49.0"
+               prefWidth="223.0" text="Оберіть свій рівень освіти ">
+            <font>
+                <Font name="Mukta Malar Bold" size="21.0"/>
+            </font>
+        </Label>
+        <Button fx:id="exitButton" layoutX="77.0" layoutY="165.0" onAction="#exitAction"
+                mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fxbackground-color: #EE82EE;"
+                text="Вихід"/>
+        <Button fx:id="nextButton" layoutX="347.0" layoutY="165.0"
+                mnemonicParsing="false" onAction="#nextAction" prefHeight="26.0"
+                prefWidth="82.0" style="-fx-background-color: #FFFAFA;" text="Далі->"/>
+        <ComboBox fx:id="educationField" layoutX="298.0" layoutY="59.0"
+                  prefHeight="26.0" prefWidth="198.0"/>
+    </AnchorPane>
+</AnchorPane>

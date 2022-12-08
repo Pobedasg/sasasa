@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ua.fx.controller.FourthStepController"
+            fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: #FFFAFA;">
+
+    <AnchorPane layoutX="21.0" layoutY="15.0" prefHeight="46.0"
+                prefWidth="405.0" style="-fx-background-color: #EE82EE;">
+        <Label layoutX="76.0" layoutY="8.0" text="Крок 3/3"
+               textAlignment="CENTER">
+            <font>
+                <Font name="Mukta Malar Bold" size="24.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+
+    <AnchorPane layoutX="20.0" layoutY="85.0" prefHeight="273.0"
+                prefWidth="558.0" style="-fx-background-color: #EE82EE;">
+        <Label layoutX="172.0" layoutY="14.0" prefHeight="49.0"
+               prefWidth="231.0" text="Оберіть спеціалізацію ">
+            <font>
+                <Font name="Mukta Malar Bold" size="21.0"/>
+            </font>
+        </Label>
+        <Button fx:id="exitButton" layoutX="77.0" layoutY="165.0" onAction="#exitAction"
+                mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fxbackground-color: #EE82EE;"
+                text="Exit"/>
+        <Button fx:id="nextButton" layoutX="347.0" layoutY="165.0"
+                mnemonicParsing="false" onAction="#nextAction" prefHeight="26.0"
+                prefWidth="82.0" style="-fx-background-color: #FFFAFA;" text="About"/>
+        <RadioButton layoutX="45.0" layoutY="95.0" mnemonicParsing="false"
+                     text="Системи штучного інтелекту">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="320.0" layoutY="95.0" mnemonicParsing="false"
+                     text="Системи проектування">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </RadioButton>
+    </AnchorPane>
+
+</AnchorPane>
